@@ -1,0 +1,65 @@
+/* STYLE THE DEFAULT MY ACCOUNT NAVIGATION By Bongdevs.com*/
+
+/* Change column widths for Laptop and up */
+@media (min-width:992px) {
+	.woocommerce-account .woocommerce-MyAccount-navigation {
+		width: 18%;
+	}
+	.woocommerce-account .woocommerce-MyAccount-content {
+		width: 78%;
+	}
+	/* Style account endpoint links */
+	nav.woocommerce-MyAccount-navigation ul li a {
+		color: #606060 !important;
+	}
+	nav.woocommerce-MyAccount-navigation ul li a:hover, nav.woocommerce-MyAccount-navigation ul li a:focus {
+		color: #212121 !important;
+		text-decoration: none;
+	}
+	nav.woocommerce-MyAccount-navigation ul li {
+		list-style-type: none;
+		margin-left: -19px;
+		padding-left: 0px;
+		max-width: 200px;
+		font-size: 17px;
+		line-height: 26px;
+	}
+	nav.woocommerce-MyAccount-navigation ul li {
+		padding: 8px 20px;
+		background-color: rgba(0,0,0,0.05);
+		border-bottom: 1px solid rgba(0,0,0,0.05);
+	}
+	nav.woocommerce-MyAccount-navigation ul li.is-active {
+		background-color: #0E6655;
+	}
+	nav.woocommerce-MyAccount-navigation ul li.is-active a {
+		color: white !important;
+		font-weight: bold;
+		pointer: cursor;
+	}
+	nav.woocommerce-MyAccount-navigation ul li.is-active:after {
+		content: "";
+		height: 0;
+		width: 0;
+		border-top: 20px solid transparent;
+		border-left: 14px solid #0E6655;
+		border-bottom: 20px solid transparent;
+		float: right;
+		margin-right: -34px;
+		margin-top: -7px;
+	}
+	nav.woocommerce-MyAccount-navigation ul li:not(.is-active):hover {
+		background-color: rgba(0,0,0,0.07);
+	}
+	nav.woocommerce-MyAccount-navigation ul li:not(.is-active):hover:after { 
+		content: "";
+		height: 0;
+		width: 0;
+		border-top: 20px solid transparent;
+		border-left: 14px solid rgba(0,0,0,0.07);
+		border-bottom: 20px solid transparent;
+		float: right;
+		margin-right: -34px;
+		margin-top: -7px;
+	}
+}
